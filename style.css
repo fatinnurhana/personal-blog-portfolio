@@ -223,3 +223,9 @@ footer {
     header h1 { font-size: 1.8rem; }
     nav { display: flex; flex-direction: column; gap: 5px; }
 }
+
+/* Menghilangkan semua garis bawah pada kad artikel yang boleh diklik */
+a {
+    text-decoration: none !important; /* Memaksa browser buang semua underline */
+    color: inherit; /* Kekalkan warna asal teks tanpa tukar jadi biru pautan */
+}
