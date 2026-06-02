@@ -22,11 +22,16 @@ This repository contains a professional personal blog portfolio developed to ful
 
 ---
 
-### 🛠️ Tech Stack & Technologies Used
-* **HTML5:** Utilized for structuring semantic web page contents.
-* **CSS3:** Implementation of modern UI layouts, responsive design, custom typography, and aesthetics.
-* **Git & GitHub:** Implemented for version control management, tracking development history via meaningful commits, and remote repository hosting.
-* **GitHub Pages:** Deployed for live hosting to ensure global accessibility.
+## 🛠️ Technologies Used
+
+In building this creative portfolio website, several modern web technologies and tools were implemented to ensure a smooth, interactive, and responsive user experience:
+
+* **HTML5 & CSS3** – Used for creating the structure, custom pastel aesthetics, and smooth responsive layout styling.
+* **JavaScript (Inline Interactions)** – Powers the dynamic micro-interactions, spring-bouncy hover effects, and active click animations on the category cards.
+* **Formspree** – Integrated as a serverless backend service to power the functional contact form, handling secure message submissions directly to email without requiring a dedicated database backend.
+* **Font Awesome** – Implemented for modern, crisp iconography across social media and navigation elements.
+* **Google Fonts** – Features custom web typography like *Fredoka* and *Segoe UI* to enrich the creative soft-aesthetic design.
+* **GitHub Pages** – Used for hosting and seamless deployment of the live static production site.
 
 ---
 
