@@ -13,12 +13,13 @@ This repository contains a professional personal blog portfolio developed to ful
 
 ---
 
-### 🚀 Key Features
-* **Professional Profile (Home):** A welcoming introduction highlighting the author's technical background.
-* **Academic Journey (About Me):** Insights into academic pursuits at UniSZA and future career aspirations in software engineering.
-* **Technical Articles (Blog):** Informative and well-structured short articles covering modern programming paradigms and software version control.
-* **Networking Channels (Contact):** A dedicated section providing formal contact information along with direct links to the GitHub repository.
-* **Responsive Web Design:** A fully optimized user interface tailored for seamless viewing across desktop and mobile devices (`@media queries` applied).
+## 🚀 Key Features
+
+* **Professional Profile (Home):** A welcoming introduction highlighting technical backgrounds, featuring dynamic category cards with custom elastic hover and click animations.
+* **Academic Journey (About Me):** Deep insights into academic pursuits at UniSZA, career aspirations in software engineering, and a beautifully tailored, center-aligned profile layout.
+* **Technical Articles (Blog):** Informative and well-structured short articles covering modern programming paradigms, integrated with direct Canva portfolio access for showcases like Photography.
+* **Networking Channels (Contact):** A dedicated contact page powered by a fully functional serverless form (Formspree) that routes messages directly to email, alongside quick-access social links and CV previews.
+* **Responsive Web Design:** A fully optimized, soft-pastel user interface tailored for seamless viewing across desktop and mobile devices using advanced `@media` queries.
 
 ---
 
