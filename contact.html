@@ -1,19 +1,258 @@
-<form action="https://formspree.io/f/mpqnvvqd" method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Fatin Nurhana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap">
+    
+    <style>
+        /* --- 1. TETAPAN ASAS --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffaf8;
+            margin: 0;
+            display: flex;
+        }
+
+        /* --- 2. STYLING SIDEBAR (Kekal Konsisten) --- */
+        .sidebar {
+            width: 260px;
+            background: #fff;
+            padding: 30px 20px;
+            height: 100vh;
+            position: fixed;
+            border-right: 2px dashed #ffcbd1;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.02);
+            box-sizing: border-box;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffcbd1;
+        }
+        .sidebar h1 {
+            font-family: 'Fredoka', cursive;
+            font-size: 1.4rem;
+            color: #4a4a4a;
+            margin: 15px 0 5px 0;
+        }
+        .sidebar-bio {
+            font-size: 0.85rem;
+            color: #7a7a7a;
+            line-height: 1.5;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .icon-btn {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #fff5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff7676;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border: 1px solid #ffcbd1;
+        }
+        .sidebar-nav a {
+            display: block;
+            padding: 12px 20px;
+            color: #ff7676;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            background: #fff5f5;
+            font-family: 'Fredoka', cursive;
+        }
+        .sidebar-nav a.active {
+            background: #ff7676;
+            color: white;
+        }
+
+        /* --- 3. KANDUNGAN UTAMA (CONTACT PAGE) --- */
+        .main-content {
+            margin-left: 260px; /* Ditukar supaya ngam dengan lebar sidebar */
+            flex: 1;
+            padding: 0 0 40px 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Gambar Header Atas */
+        .contact-header-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=1200&auto=format&fit=crop'); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-title {
+            font-family: 'Fredoka', cursive;
+            font-size: 3.5rem;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            letter-spacing: 2px;
+        }
+
+        /* Kotak Borang Mesej */
+        .form-container {
+            max-width: 550px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 24px;
+            border: 2px solid #feebc8;
+            box-shadow: 0 8px 24px rgba(255, 179, 179, 0.1);
+            box-sizing: border-box;
+        }
+        .form-container h2 {
+            font-family: 'Fredoka', cursive;
+            font-size: 2.2rem;
+            color: #ff7676;
+            margin: 0 0 5px 0;
+        }
+        .form-subtitle {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+
+        /* SUSUNAN FORM KOTAK DEMI KOTAK */
+        .form-group {
+            text-align: left;
+            margin-bottom: 22px;
+            display: flex;
+            flex-direction: column; /* Memaksa label duduk di atas input dengan kemas */
+        }
+        .form-group label {
+            font-family: 'Fredoka', cursive;
+            font-weight: 600;
+            color: #5a5a5a;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        /* Hiasan Input & Textarea */
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #feebc8;
+            border-radius: 14px;
+            box-sizing: border-box;
+            font-size: 0.95rem;
+            background-color: #fffcf9;
+            color: #4a4a4a;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-control:focus {
+            border-color: #ff7676;
+            box-shadow: 0 0 0 4px rgba(255, 118, 118, 0.1);
+            outline: none;
+        }
+        textarea.form-control {
+            height: 140px;
+            resize: none; /* Padamkan petak tarik bawah supaya sentiasa kemas */
+            font-family: inherit;
+        }
+
+        /* Butang Send */
+        .btn-wrapper {
+            display: flex;
+            justify-content: flex-start; /* Letak butang di sebelah kiri bawah form */
+        }
+        .btn-send {
+            background-color: #1b264f;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-family: 'Fredoka', cursive;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(27, 38, 79, 0.2);
+            transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+        }
+        .btn-send:hover {
+            background-color: #111836;
+            box-shadow: 0 6px 16px rgba(27, 38, 79, 0.3);
+        }
+        .btn-send:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
+        <h1>Fatin Nurhana</h1>
+        <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/fatin-nurhana-554064405/" target="_blank" class="icon-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/" target="_blank" class="icon-btn"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:fatin@example.com" class="icon-btn"><i class="fas fa-envelope"></i></a>
+            <a href="resume.pdf" target="_blank" class="icon-btn">CV</a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="blog.html">Articles</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        
+        <div class="contact-header-img">
+            <div class="header-title">Contact</div>
+        </div>
+
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+            <p class="form-subtitle">You can contact me with the contact form below:</p>
+
+            <form action="https://formspree.io/f/mpqnvvqd" method="POST">
                 
                 <div class="form-group">
-                    <label for="name">Name <span style="color: red;">*</span></label>
-                    <input type="text" id="name" name="name" class="form-control" required>
+                    <label for="name">Name <span style="color: #ff7676;">*</span></label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your beautiful name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email <span style="color: red;">*</span></label>
-                    <input type="email" id="email" name="email" class="form-control" required>
+                    <label for="email">Email <span style="color: #ff7676;">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="yourname@email.com" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Message <span style="color: red;">*</span></label>
-                    <textarea id="message" name="message" class="form-control" required></textarea>
+                    <label for="message">Message <span style="color: #ff7676;">*</span></label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Write your sweet message here..." required></textarea>
                 </div>
 
-                <button type="submit" class="btn-send">Send</button>
+                <div class="btn-wrapper">
+                    <button type="submit" class="btn-send">Send</button>
+                </div>
             </form>
+        </div>
+
+    </main>
+
+</body>
+</html>
