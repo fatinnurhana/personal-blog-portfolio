@@ -1,0 +1,115 @@
+/* Tetapan Asas & Warna Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Bahagian Atas (Header & Navigasi) */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: #34495e;
+    color: #1abc9c;
+}
+
+/* Kandungan Utama */
+main {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    min-height: 400px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Gaya Khas untuk Halaman Blog (Artikel) */
+article {
+    background: #fdfdfd;
+    padding: 20px;
+    border-left: 5px solid #1abc9c;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+article h2 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+small {
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Bahagian Bawah (Footer) */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* REKA BENTUK RESPONSIVE (Untuk Telefon Bimbit) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px;
+        background: #34495e;
+    }
+}
