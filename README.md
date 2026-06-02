@@ -1,35 +1,42 @@
 # CSD 34203: Special Topics in Software Development
 ## Individual Project: GitHub Portfolio (Personal Blog Page)
 
-### 📌 Maklumat Pelajar
-* **Nama:** Fatin Nurhana binti Hasmuddin
-* **Kursus:** CSD 34203 (Special Topics in Software Development)
-* **Fakulti:** Fakulti Informatik dan Komputer (FIK), UniSZA
+### 📌 Student Information
+* **Name:** Fatin Nurhana binti Hasmuddin
+* **Course Code:** CSD 34203 (Special Topics in Software Development)
+* **Faculty:** Faculty of Informatics and Computing (FIK), UniSZA
 
 ---
 
-### 📝 Deskripsi Projek
-Projek ini merupakan sebuah portfolio blog peribadi (Personal Blog Page) yang dibina untuk memenuhi keperluan tugasan individu kursus CSD 34203. Blog ini berfungsi sebagai platform untuk memaparkan profil peribadi, minat dalam bidang IT, serta koleksi artikel ringkas yang ditulis sepanjang sesi perkuliahan.
+### 📝 Project Description
+This repository contains a professional personal blog portfolio developed to fulfill the individual project requirements for the CSD 34203 course. The platform serves as a digital space to showcase personal profiles, computing interests, and a collection of technical articles authored throughout the academic semester.
 
 ---
 
-### 🚀 Ciri-Ciri Utama (Features)
-* **Halaman Utama (Home):** Kata aluan dan pengenalan ringkas pengarang blog.
-* **Mengenai Saya (About):** Paparan latar belakang pendidikan di UniSZA serta matlamat kerjaya.
-* **Koleksi Artikel (Blog):** Mempunyai 2-3 contoh penulisan artikel ilmiah ringkas berkaitan coding dan IT.
-* **Hubungi Saya (Contact):** Borang maklumat perhubungan beserta pautan terus ke akaun GitHub.
-* **Reka Bentuk Responsif:** Antara muka yang mesra pengguna dan berubah mengikut saiz skrin (Mobile-friendly).
+### 🚀 Key Features
+* **Professional Profile (Home):** A welcoming introduction highlighting the author's technical background.
+* **Academic Journey (About Me):** Insights into academic pursuits at UniSZA and future career aspirations in software engineering.
+* **Technical Articles (Blog):** Informative and well-structured short articles covering modern programming paradigms and software version control.
+* **Networking Channels (Contact):** A dedicated section providing formal contact information along with direct links to the GitHub repository.
+* **Responsive Web Design:** A fully optimized user interface tailored for seamless viewing across desktop and mobile devices (`@media queries` applied).
 
 ---
 
-### 🛠️ Teknologi yang Digunakan
-* **HTML5:** Untuk membina struktur dan kandungan laman web.
-* **CSS3:** Untuk penggayaan reka bentuk moden, tipografi, susun atur, dan elemen responsif (`@media query`).
-* **Git & GitHub:** Untuk pengurusan versi kod (*version control*) dan penyimpanan portfolio atas talian.
+### 🛠️ Tech Stack & Technologies Used
+* **HTML5:** Utilized for structuring semantic web page contents.
+* **CSS3:** Implementation of modern UI layouts, responsive design, custom typography, and aesthetics.
+* **Git & GitHub:** Implemented for version control management, tracking development history via meaningful commits, and remote repository hosting.
+* **GitHub Pages:** Deployed for live hosting to ensure global accessibility.
 
 ---
 
-### 💻 Cara Menjalankan Projek
-1. Pastikan anda telah memuat turun (*clone*) repository ini ke komputer anda.
-2. Buka folder projek dan cari fail `index.html`.
-3. Klik dua kali (*double-click*) pada fail `index.html` tersebut untuk membukanya terus di mana-mana pelayar web (Google Chrome, Microsoft Edge, dll).
+### 💻 Live Demonstration
+The project is successfully deployed and can be accessed live at the following URL:
+👉 **[Demo Link](https://fatinnurhana.github.io/personal-blog-portfolio/)**
+
+---
+
+### 📂 How to Run Locally
+1. Clone this repository to your local machine using git:
+   ```bash
+   git clone [https://github.com/fatinnurhana/personal-blog-portfolio.git](https://github.com/fatinnurhana/personal-blog-portfolio.git)
