@@ -1,5 +1,5 @@
-/* Import Google Fonts - Inter & Playfair Display */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+/* Import Fredoka One & Quicksand untuk vibe comel/bulat */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,151 +8,199 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.8;
-    background-color: #f8f9fa; /* Latar belakang kelabu lembut bersih */
-    color: #212529;
-    padding: 60px 20px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.7;
+    background-color: #fff5f5; /* Warna Peachy Pink Lembut */
+    color: #4a4a4a;
+    padding: 40px 20px;
 }
 
-/* Header Minimalis Terbuka */
+/* Header Gaya Mochi */
 header {
+    background-color: #ffffff;
+    border: 4px dashed #ffb3b3; /* Garis putus-putus comel */
+    padding: 40px 20px;
     text-align: center;
-    padding: 40px 0 60px 0;
+    border-radius: 30px;
     max-width: 800px;
-    margin: 0 auto;
-    border-bottom: 1px solid #e9ecef;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 8px 20px rgba(255, 179, 179, 0.2);
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 2.8rem;
-    color: #1a1a1a;
-    margin-bottom: 25px;
-    letter-spacing: -0.5px;
+    font-family: 'Fredoka', cursive;
+    color: #ff7676; /* Coral Comel */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-/* Menu Navigasi Garisan Minimalis */
+/* Navigasi Butang Bulat Pastel */
 nav {
     display: inline-flex;
-    gap: 15px;
+    gap: 10px;
+    background: #fff0f0;
+    padding: 8px 16px;
+    border-radius: 50px;
 }
 
 nav a {
-    color: #6c757d;
+    color: #ff7676;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 0.95rem;
-    padding: 6px 12px;
-    transition: all 0.2s ease-in-out;
-    border-bottom: 2px solid transparent;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
 }
 
 nav a:hover {
-    color: #1a1a1a;
-    border-bottom: 2px solid #1a1a1a;
+    background-color: #ff7676;
+    color: #ffffff;
 }
 
-/* Kandungan Utama */
+/* Kandungan Utama (Kad Mochi) */
 main {
     max-width: 800px;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 2px solid #ffe3e3;
     min-height: 400px;
 }
 
+/* Maskot Bulat Comel / Blob Mascot Interaction */
+.mochi-mascot {
+    width: 100px;
+    height: 100px;
+    background: #ffcbd1;
+    border-radius: 50% 50% 45% 45%;
+    margin: 0 auto 25px auto;
+    position: relative;
+    animation: bounceMochi 3s ease-in-out infinite;
+    box-shadow: inset -5px -5px 0px rgba(0,0,0,0.05);
+}
+
+.mochi-eyes {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    width: 8px;
+    height: 8px;
+    background: #4a4a4a;
+    border-radius: 50%;
+    box-shadow: 42px 0 0 #4a4a4a;
+}
+
+.mochi-blush {
+    position: absolute;
+    top: 46px;
+    left: 15px;
+    width: 14px;
+    height: 8px;
+    background: #ff8e9e;
+    border-radius: 50%;
+    box-shadow: 54px 0 0 #ff8e9e;
+}
+
+.mochi-mouth {
+    position: absolute;
+    top: 46px;
+    left: 46px;
+    width: 8px;
+    height: 6px;
+    border: 2px solid #4a4a4a;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Animasi Bernafas/Melantun Mochi */
+@keyframes bounceMochi {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05) translateY(-5px); border-radius: 50% 50% 40% 40%; }
+}
+
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Fredoka', cursive;
+    color: #ff7676;
     font-size: 1.8rem;
-    color: #1a1a1a;
     margin-bottom: 20px;
-    font-weight: 600;
 }
 
 p {
-    margin-bottom: 25px;
-    color: #495057;
+    margin-bottom: 20px;
+    color: #6a6a6a;
     font-size: 1.05rem;
-    font-weight: 300;
 }
 
-/* Senarai Maklumat (Untuk About/Contact) */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 20px;
+/* Butang Mood / Interactive Elements */
+.mood-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
 }
 
-ul li {
-    background: #ffffff;
-    margin-bottom: 15px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    border: 1px solid #e9ecef;
-    font-size: 1rem;
-    color: #495057;
+.mood-btn {
+    background: #e6fffa; /* Mint Green */
+    border: 2px solid #b2f5ea;
+    color: #234e52;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
 }
 
-/* Kad Artikel Premium - Meniru Gaya JournoPortfolio */
+.mood-btn:hover {
+    background: #b2f5ea;
+}
+
+/* Kad Artikel Pembelajaran (Log Penulisan Mochi) */
 article {
-    background: #ffffff;
-    padding: 35px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    border: 1px solid #e9ecef;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-article:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
-    border-color: #dee2e6;
+    background: #fffaf0; /* Soft Vanilla */
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #feebc8;
 }
 
 article h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: #1a1a1a;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #dd6b20; /* Soft Orange */
 }
 
 small {
-    font-family: 'Inter', sans-serif;
-    color: #adb5bd;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
+    color: #b7791f;
+    font-weight: 700;
     display: block;
     margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Senarai Hubungi */
+ul li {
+    background: #f7fafc;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border-left: 5px solid #ff7676;
+    list-style: none;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 60px 20px 20px 20px;
-    margin-top: 60px;
-    color: #adb5bd;
-    font-size: 0.85rem;
-    border-top: 1px solid #e9ecef;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 30px 20px;
+    margin-top: 30px;
+    color: #a0aec0;
+    font-size: 0.9rem;
 }
 
-/* Kemasan Pautan Luar */
-a {
-    color: #1a1a1a;
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-/* Reka Bentuk Responsif */
 @media (max-width: 680px) {
-    body { padding: 30px 15px; }
-    header h1 { font-size: 2.2rem; }
-    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; }
-    article { padding: 25px; }
+    header h1 { font-size: 1.8rem; }
+    nav { display: flex; flex-direction: column; gap: 5px; }
 }
