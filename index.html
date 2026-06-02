@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Blog Portfolio</title>
+    <title>Articles - Fatin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Fatin's Professional Blog Portfolio</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Me</a> | 
-            <a href="blog.html">Articles</a> | 
+    <aside class="sidebar">
+        <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
+        
+        <h1>Fatin Nurhana</h1>
+        <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
+        
+        <div class="social-icons">
+            <a href="https://linkedin.com/" target="_blank" class="icon-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/" target="_blank" class="icon-btn instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:fatin@example.com" class="icon-btn email"><i class="fas fa-envelope"></i></a>
+            <a href="resume.pdf" download="Resume_Fatin.pdf" class="icon-btn cv-btn">CV</a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="blog.html" class="active">Articles</a>
             <a href="contact.html">Contact</a>
         </nav>
-    </header>
+    </aside>
 
-    <main style="text-align: center;">
-        <div class="mochi-mascot">
-            <div class="mochi-eyes"></div>
-            <div class="mochi-blush"></div>
-            <div class="mochi-mouth"></div>
-        </div>
+    <main>
+        <a href="article1.html" style="display: block;">
+            <article>
+                <h2>Essay 1: The Art of Adaptability in Modern Software Engineering</h2>
+                <p><small>Published: June 2026</small></p>
+                <p>Learning programming languages is akin to learning human literature...</p>
+            </article>
+        </a>
 
-        <h2>Welcome to Mochi's Reflection Space ✨</h2>
-        
-        <div class="mood-container">
-            <button class="mood-btn">😊 Happy</button>
-            <button class="mood-btn" style="background: #ebf8ff; border-color: #bee3f8; color: #2b6cb0;">🧠 Productive</button>
-            <button class="mood-btn" style="background: #fff5f5; border-color: #fed7d7; color: #9b2c2c;">☁️ Cozy</button>
-        </div>
-
-        <p>Hello! I am Fatin Nurhana, a Computer Science student. Welcome to my cozy little landing page built to document thoughts, technical logs, and articles for my <strong>CSD 34203 (Special Topics in Software Development)</strong> course.</p>
-        <p>This space is heavily inspired by the soft, mindful, and cute aesthetic of Tooplate's Mochi Space layout. Take a breath, click around, and enjoy your stay!</p>
+        <a href="article2.html" style="display: block;">
+            <article>
+                <h2>Essay 2: Version Control as a Digital Narrative and Living Resume</h2>
+                <p><small>Published: June 2026</small></p>
+                <p>GitHub is far grander than a simple storage for scripts...</p>
+            </article>
+        </a>
     </main>
+
+</body>
+</html>
 
     <footer>
         <p>&copy; 2026 Fatin Nurhana. All Rights Reserved.</p>
