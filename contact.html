@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me - Fatin Nurhana</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
+    <!-- 🌟 DIPERBAIKI: Menggunakan CDN FontAwesome terkini supaya ikon tidak kosong lagi! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap">
     
     <style>
@@ -16,43 +17,46 @@
             display: flex;
         }
 
-        /* --- 2. STYLING SIDEBAR (Kekal Konsisten) --- */
+        /* --- 2. STYLING SIDEBAR (DIPERBAIKI IKUT IMAGE_3E7A08.PNG) --- */
         .sidebar {
-            width: 260px;
+            width: 280px; /* Lebar ditambah sikit untuk keselesaan menu kapsul */
             background: #fff;
-            padding: 30px 20px;
+            padding: 40px 24px;
             height: 100vh;
             position: fixed;
             border-right: 2px dashed #ffcbd1;
-            box-shadow: 2px 0 10px rgba(0,0,0,0.02);
+            box-shadow: 2px 0 10px rgba(0,0,0,0.01);
             box-sizing: border-box;
+            text-align: left; /* Teks sejajar ke kiri mengikut imej contoh */
         }
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 130px; /* Saiz dibesarkan sedikit mengikut gambar profil Fatin */
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #ffcbd1;
+            margin-bottom: 10px;
         }
         .sidebar h1 {
             font-family: 'Fredoka', cursive;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             color: #4a4a4a;
-            margin: 15px 0 5px 0;
+            margin: 15px 0 8px 0;
         }
         .sidebar-bio {
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             color: #7a7a7a;
             line-height: 1.5;
+            margin-bottom: 25px;
         }
         .social-icons {
             display: flex;
-            gap: 10px;
-            margin: 20px 0;
+            gap: 12px;
+            margin: 25px 0;
         }
         .icon-btn {
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: #fff5f5;
             display: flex;
@@ -61,28 +65,43 @@
             color: #ff7676;
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 1rem;
             border: 1px solid #ffcbd1;
+            transition: all 0.2s ease;
         }
+        .icon-btn:hover {
+            background: #ffe3e5;
+            transform: translateY(-2px);
+        }
+
+        /* STYLING MENU KAPSUL SEPERTI DALAM GAMBAR */
         .sidebar-nav a {
             display: block;
-            padding: 12px 20px;
+            padding: 14px 24px;
             color: #ff7676;
             text-decoration: none;
-            border-radius: 20px;
-            margin-bottom: 8px;
+            border-radius: 25px; /* Membujur sepenuhnya seperti kapsul */
+            margin-bottom: 12px;
             font-weight: bold;
             background: #fff5f5;
             font-family: 'Fredoka', cursive;
+            font-size: 1.05rem;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+        }
+        .sidebar-nav a:hover {
+            background: #ffe3e5;
+            padding-left: 28px;
         }
         .sidebar-nav a.active {
-            background: #ff7676;
+            background: #ff7676; /* Warna merah jambu terang padu */
             color: white;
+            box-shadow: 0 4px 12px rgba(255, 118, 118, 0.3);
         }
 
         /* --- 3. KANDUNGAN UTAMA (CONTACT PAGE) --- */
         .main-content {
-            margin-left: 260px; /* Ditukar supaya ngam dengan lebar sidebar */
+            margin-left: 280px; 
             flex: 1;
             padding: 0 0 40px 0;
             min-height: 100vh;
@@ -132,12 +151,11 @@
             margin-top: 0;
         }
 
-        /* SUSUNAN FORM KOTAK DEMI KOTAK */
         .form-group {
             text-align: left;
             margin-bottom: 22px;
             display: flex;
-            flex-direction: column; /* Memaksa label duduk di atas input dengan kemas */
+            flex-direction: column;
         }
         .form-group label {
             font-family: 'Fredoka', cursive;
@@ -145,9 +163,9 @@
             color: #5a5a5a;
             margin-bottom: 8px;
             font-size: 0.95rem;
+            margin-left: 4px;
         }
         
-        /* Hiasan Input & Textarea */
         .form-control {
             width: 100%;
             padding: 14px 16px;
@@ -166,14 +184,13 @@
         }
         textarea.form-control {
             height: 140px;
-            resize: none; /* Padamkan petak tarik bawah supaya sentiasa kemas */
+            resize: none;
             font-family: inherit;
         }
 
-        /* Butang Send */
         .btn-wrapper {
             display: flex;
-            justify-content: flex-start; /* Letak butang di sebelah kiri bawah form */
+            justify-content: flex-start;
         }
         .btn-send {
             background-color: #1b264f;
@@ -199,11 +216,14 @@
 </head>
 <body>
 
+    <!-- SIDEBAR DENGAN REKABENTUK YANG TELAH DIPERBAIKI -->
     <aside class="sidebar">
+        <!-- Menggunakan gambar asal Fatin dengan border sepadan -->
         <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
         <h1>Fatin Nurhana</h1>
         <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
         
+        <!-- SOSIAL IKON (Kini wajib muncul sebab CDN sudah dikemas kini) -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/fatin-nurhana-554064405/" target="_blank" class="icon-btn"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://instagram.com/" target="_blank" class="icon-btn"><i class="fab fa-instagram"></i></a>
@@ -211,6 +231,7 @@
             <a href="resume.pdf" target="_blank" class="icon-btn">CV</a>
         </div>
 
+        <!-- NAVIGASI KAPSUL MENGIKUT IMAGE_3E7A08.PNG -->
         <nav class="sidebar-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
@@ -219,6 +240,7 @@
         </nav>
     </aside>
 
+    <!-- KANDUNGAN UTAMA (SEBELAH KANAN) KEKAL BERFUNGSI DENGAN FORMSPREE -->
     <main class="main-content">
         
         <div class="contact-header-img">
