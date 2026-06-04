@@ -13,12 +13,12 @@
         <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
         
         <h1>Fatin Nurhana</h1>
-        <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
+        <p class="sidebar-bio">Avid developer, IT (Media Informatics) student at UniSZA, and a creator drawn to creative tech narratives.</p>
         
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/fatin-nurhana-554064405/" target="_blank" class="icon-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://instagram.com/" target="_blank" class="icon-btn instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:fatin@example.com" class="icon-btn email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:fatinnurhana9@gmail.com" class="icon-btn email"><i class="fas fa-envelope"></i></a>
             <a href="resume..pdf" target="_blank" class="icon-btn cv-btn">CV</a>
         </div>
 
@@ -32,65 +32,53 @@
 
     <main>
         <p class="home-intro">
-            Welcome to my creative space! Explore my handpicked works spanning across photography, 3D animations, and interactive game development. 🚀✨
+            Welcome to my creative space! Explore my handpicked works spanning across photography, 3D animations, interactive game development, and extracurricular achievements. 🚀✨
         </p>
 
-        <div class="category-grid">
+        <!-- ================= KATEGORI MENU GRID ================= -->
+        <div class="category-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px;">
             
+            <!-- Photography Card -->
             <a href="#photography-section" style="text-decoration: none;">
-        <div class="category-card" 
-             style="text-align: center; padding: 15px; background: #ffffff; border-radius: 20px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;"
-             onmouseover="this.style.transform='scale(1.04) translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(255, 118, 118, 0.15)'" 
-             onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='none'"
-             onmousedown="this.style.transform='scale(0.98) translateY(0)'"
-             onmouseup="this.style.transform='scale(1.04) translateY(-5px)'">
-            
-            <h3 style="margin-top: 0; margin-bottom: 12px; font-family: 'Fredoka', cursive; color: #5a5a5a;">Photography</h3>
-            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=500&auto=format&fit=crop" 
-                 alt="Photography" 
-                 style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 12px; display: block;">
-        </div>
-    </a>
+                <div class="category-card" style="text-align: center; padding: 15px; background: #ffffff; border-radius: 20px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.04) translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(255, 118, 118, 0.15)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='none'">
+                    <h3 style="margin-top: 0; margin-bottom: 12px; font-family: 'Fredoka', cursive; color: #5a5a5a;">Photography</h3>
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=500&auto=format&fit=crop" alt="Photography" style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px; display: block;">
+                </div>
+            </a>
 
-    <a href="#animation-section" style="text-decoration: none;">
-        <div class="category-card" 
-             style="text-align: center; padding: 15px; background: #ffffff; border-radius: 20px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;"
-             onmouseover="this.style.transform='scale(1.04) translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(255, 118, 118, 0.15)'" 
-             onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='none'"
-             onmousedown="this.style.transform='scale(0.98) translateY(0)'"
-             onmouseup="this.style.transform='scale(1.04) translateY(-5px)'">
-            
-            <h3 style="margin-top: 0; margin-bottom: 12px; font-family: 'Fredoka', cursive; color: #5a5a5a;">Animation</h3>
-            <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=500&auto=format&fit=crop" 
-                 alt="Animation" 
-                 style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 12px; display: block;">
-        </div>
-    </a>
+            <!-- Animation Card -->
+            <a href="#animation-section" style="text-decoration: none;">
+                <div class="category-card" style="text-align: center; padding: 15px; background: #ffffff; border-radius: 20px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.04) translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(255, 118, 118, 0.15)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='none'">
+                    <h3 style="margin-top: 0; margin-bottom: 12px; font-family: 'Fredoka', cursive; color: #5a5a5a;">Animation</h3>
+                    <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=500&auto=format&fit=crop" alt="Animation" style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px; display: block;">
+                </div>
+            </a>
 
-    <a href="#game-section" style="text-decoration: none;">
-        <div class="category-card" 
-             style="text-align: center; padding: 15px; background: #ffffff; border-radius: 20px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;"
-             onmouseover="this.style.transform='scale(1.04) translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(255, 118, 118, 0.15)'" 
-             onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='none'"
-             onmousedown="this.style.transform='scale(0.98) translateY(0)'"
-             onmouseup="this.style.transform='scale(1.04) translateY(-5px)'">
-            
-            <h3 style="margin-top: 0; margin-bottom: 12px; font-family: 'Fredoka', cursive; color: #5a5a5a;">Game Dev</h3>
-            <img src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=500&auto=format&fit=crop" 
-                 alt="Game Development" 
-                 style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 12px; display: block;">
-        </div>
-    </a>
+            <!-- Game Dev Card -->
+            <a href="#game-section" style="text-decoration: none;">
+                <div class="category-card" style="text-align: center; padding: 15px; background: #ffffff; border-radius: 20px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.04) translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(255, 118, 118, 0.15)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='none'">
+                    <h3 style="margin-top: 0; margin-bottom: 12px; font-family: 'Fredoka', cursive; color: #5a5a5a;">Game Dev</h3>
+                    <img src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=500&auto=format&fit=crop" alt="Game Development" style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px; display: block;">
+                </div>
+            </a>
+
+            <!-- KOKURIKULUM CARD (BAHARU) -->
+            <a href="#extracurricular-section" style="text-decoration: none;">
+                <div class="category-card" style="text-align: center; padding: 15px; background: #ffffff; border-radius: 20px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.04) translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(255, 118, 118, 0.15)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='none'">
+                    <h3 style="margin-top: 0; margin-bottom: 12px; font-family: 'Fredoka', cursive; color: #5a5a5a;">Activities</h3>
+                    <img src="Unipreneur.jpg" alt="Extracurricular Activities" style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px; display: block;">
+                </div>
+            </a>
 
         </div>
 
+        <!-- ================= PHOTOGRAPHY SECTION ================= -->
         <section id="photography-section" style="margin-top: 60px; padding-top: 20px; border-top: 2px dashed #ffb3b3;">
             <h2 style="font-family: 'Fredoka', cursive; color: #ff7676; margin-bottom: 20px;"><i class="fas fa-camera"></i> My Photography</h2>
             <div style="background: #ffffff; padding: 20px; border-radius: 20px; border: 2px solid #feebc8; max-width: 325px; margin: 0 auto; box-shadow: 0 8px 20px rgba(255, 179, 179, 0.1);">
                 <p style="font-weight: bold; margin-bottom: 15px; font-size: 0.95rem; text-align: left; color: #4a4a4a;">
                     <i class="fab fa-tiktok" style="color: #ff7676;"></i> Photography Showcase:
                 </p>
-                
                 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@fatin_han4/video/7587849596773076242" data-video-id="7587849596773076242" style="max-width: 605px; min-width: 325px; margin: 0; padding: 0;">
                     <section>
                         <a target="_blank" title="@fatin_han4" href="https://www.tiktok.com/@fatin_han4?refer=embed">@fatin_han4</a>
@@ -99,90 +87,126 @@
                 <script async src="https://www.tiktok.com/embed.js"></script>
             </div>
 
-            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px dashed #feebc8;">
-                    <a href="https://canva.link/ca6q1qrzv9qee9q" 
-                       target="_blank" 
-                       style="display: inline-block; background: #7d2ae8; color: white; font-family: 'Fredoka', sans-serif; font-weight: bold; padding: 10px 25px; border-radius: 20px; text-decoration: none; font-size: 0.9rem; box-shadow: 0 4px 12px rgba(125, 42, 232, 0.2); transition: transform 0.2s, background-color 0.2s;"
-                       onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#6319cf'" 
-                       onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#7d2ae8'">
-                        <i class="fas fa-palette" style="margin-right: 6px;"></i> View on Canva ➔
-                    </a>
-                </div>
-
-            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px dashed #feebc8;">
-                    <a href="https://canva.link/xvh9irbp7a5964m" 
-                       target="_blank" 
-                       style="display: inline-block; background: #7d2ae8; color: white; font-family: 'Fredoka', sans-serif; font-weight: bold; padding: 10px 25px; border-radius: 20px; text-decoration: none; font-size: 0.9rem; box-shadow: 0 4px 12px rgba(125, 42, 232, 0.2); transition: transform 0.2s, background-color 0.2s;"
-                       onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#6319cf'" 
-                       onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#7d2ae8'">
-                        <i class="fas fa-palette" style="margin-right: 6px;"></i> View on Canva ➔
-                    </a>
-                </div>
+            <div style="margin-top: 20px; padding-top: 15px; text-align: center;">
+                <a href="https://canva.link/ca6q1qrzv9qee9q" target="_blank" style="display: inline-block; background: #7d2ae8; color: white; font-family: 'Fredoka', sans-serif; font-weight: bold; padding: 10px 25px; border-radius: 20px; text-decoration: none; font-size: 0.9rem; box-shadow: 0 4px 12px rgba(125, 42, 232, 0.2); margin-right: 10px;">
+                    <i class="fas fa-palette" style="margin-right: 6px;"></i> View Portfolio 1 on Canva ➔
+                </a>
+                <a href="https://canva.link/xvh9irbp7a5964m" target="_blank" style="display: inline-block; background: #7d2ae8; color: white; font-family: 'Fredoka', sans-serif; font-weight: bold; padding: 10px 25px; border-radius: 20px; text-decoration: none; font-size: 0.9rem; box-shadow: 0 4px 12px rgba(125, 42, 232, 0.2);">
+                    <i class="fas fa-palette" style="margin-right: 6px;"></i> View Portfolio 2 on Canva ➔
+                </a>
+            </div>
         </section>
 
+        <!-- ================= ANIMATION SECTION ================= -->
         <section id="animation-section" style="margin-top: 60px; padding-top: 20px; border-top: 2px dashed #ffb3b3;">
             <h2 style="font-family: 'Fredoka', cursive; color: #ff7676; margin-bottom: 20px;"><i class="fas fa-film"></i> 3D Animation & Models</h2>
             
             <div style="background: #ffffff; padding: 15px; border-radius: 15px; border: 2px solid #feebc8; margin-bottom: 20px;">
                 <p style="font-weight: bold; margin-bottom: 10px; font-size: 0.9rem;">🎬 Animated Short Film / Render:</p>
-                
                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
-                    <iframe src="https://www.youtube.com/embed/KprxuE1EbSo" 
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                    </iframe>
+                    <iframe src="https://www.youtube.com/embed/KprxuE1EbSo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div style="background: #ffffff; padding: 15px; border-radius: 15px; border: 2px solid #feebc8;">
-                    <p style="font-weight: bold; margin-bottom: 10px; font-size: 0.9rem;">🎬 Animation Showcase 2:</p>
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
-                        <iframe src="https://www.youtube.com/embed/B2QJtBAmmrs" 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                        </iframe>
-                    </div>
+                <p style="font-weight: bold; margin-bottom: 10px; font-size: 0.9rem;">🎬 Animation Showcase 2:</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+                    <iframe src="https://www.youtube.com/embed/B2QJtBAmmrs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+            </div>
         </section>
 
+        <!-- ================= GAME Dev SECTION ================= -->
         <section id="game-section" style="margin-top: 60px; padding-top: 20px; border-top: 2px dashed #ffb3b3; margin-bottom: 50px; text-align: center;">
-    
-    <!-- Tajuk & Penerangan Projek (Veterinar Lembu) -->
-    <h2 style="font-family: 'Fredoka', cursive; color: #ff7676; margin-bottom: 10px; font-size: 1.5rem;">VetQuest: Bovine Care Simulator 🐮🚀</h2>
-    <p style="max-width: 620px; margin: 0 auto 25px auto; font-size: 0.95rem; line-height: 1.6; color: #5a5a5a;">
-        An educational 3D simulation game developed in <strong>Roblox Studio</strong> that immerses players into the role of a veterinarian specializing in bovine healthcare. The game features interactive gameplay where players diagnose various cattle diseases and learn step-by-step medical treatment procedures. This project integrates custom <strong>Lua scripting</strong> for the treatment mechanics, creative level design, and <strong>dynamic lighting</strong> to create an engaging, educational experience.
-    </p>
+            <h2 style="font-family: 'Fredoka', cursive; color: #ff7676; margin-bottom: 10px; font-size: 1.5rem;">VetQuest: Bovine Care Simulator 🐮🚀</h2>
+            <p style="max-width: 620px; margin: 0 auto 25px auto; font-size: 0.95rem; line-height: 1.6; color: #5a5a5a;">
+                An educational 3D simulation game developed in <strong>Roblox Studio</strong> that immerses players into the role of a veterinarian specializing in bovine healthcare. The game features interactive gameplay where players diagnose various cattle diseases and learn step-by-step medical treatment procedures. This project integrates custom <strong>Lua scripting</strong> for the treatment mechanics, creative level design, and <strong>dynamic lighting</strong> to create an engaging, educational experience.
+            </p>
 
-    <!-- Bahagian Grid 3 Gambar Screenshot (Susun Sebelah-Sebelah) -->
-    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 30px; justify-content: center; max-width: 950px; margin-left: auto; margin-right: auto;">
-        
-        <!-- Gambar 1 -->
-        <div style="flex: 1; min-width: 250px; max-width: 290px;">
-            <img src="roblox1.jpeg" alt="Roblox Vet Game 1" style="width: 100%; height: 180px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.06); object-fit: cover;">
-        </div>
-        
-        <!-- Gambar 2 -->
-        <div style="flex: 1; min-width: 250px; max-width: 290px;">
-            <img src="roblox2.jpeg" alt="Roblox Vet Game 2" style="width: 100%; height: 180px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.06); object-fit: cover;">
-        </div>
-        
-        <!-- Gambar 3 -->
-        <div style="flex: 1; min-width: 250px; max-width: 290px;">
-            <img src="roblox3.jpeg" alt="Roblox Vet Game 3" style="width: 100%; height: 180px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.06); object-fit: cover;">
-        </div>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 30px; justify-content: center; max-width: 950px; margin-left: auto; margin-right: auto;">
+                <div style="flex: 1; min-width: 250px; max-width: 290px;">
+                    <img src="roblox1.jpeg" alt="Roblox Vet Game 1" style="width: 100%; height: 180px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.06); object-fit: cover;">
+                </div>
+                <div style="flex: 1; min-width: 250px; max-width: 290px;">
+                    <img src="roblox2.jpeg" alt="Roblox Vet Game 2" style="width: 100%; height: 180px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.06); object-fit: cover;">
+                </div>
+                <div style="flex: 1; min-width: 250px; max-width: 290px;">
+                    <img src="roblox3.jpeg" alt="Roblox Vet Game 3" style="width: 100%; height: 180px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.06); object-fit: cover;">
+                </div>
+            </div>
+            
+            <a href="https://www.roblox.com/share?code=ec648be04d664c43ad8ea33d37b2f0b3&type=ExperienceDetails&stamp=1780416102395" target="_blank" style="display: inline-block; background: #00e676; color: white; font-family: 'Fredoka', sans-serif; font-weight: bold; padding: 14px 40px; border-radius: 30px; text-decoration: none; font-size: 1.05rem; box-shadow: 0 6px 20px rgba(0, 230, 118, 0.3);">
+                <i class="fas fa-gamepad" style="margin-right: 8px;"></i> View Project on Roblox ➔
+            </a>
+        </section>
 
-    </div>
-</section>
+        <!-- ================= SEKSYEN KOKURIKULUM (BAHARU & INTERAKTIF) ================= -->
+        <section id="extracurricular-section" style="margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ffb3b3; margin-bottom: 60px; text-align: center;">
+            <h2 style="font-family: 'Fredoka', cursive; color: #ff7676; margin-bottom: 10px; font-size: 1.5rem;"><i class="fas fa-star"></i> Extracurricular & Certifications</h2>
+            <p style="max-width: 600px; margin: 0 auto 35px auto; font-size: 0.95rem; color: #5a5a5a; line-height: 1.6;">
+                Active participation in professional tech workshops, digital entrepreneurship, and national student initiatives during my time at UniSZA.
+            </p>
+
+            <div style="display: flex; gap: 25px; flex-wrap: wrap; justify-content: center; max-width: 950px; margin: 0 auto;">
+                
+                <!-- PROGRAM MDEC -->
+                <div style="background: #ffffff; border: 2px solid #feebc8; padding: 25px; border-radius: 20px; flex: 1; min-width: 280px; max-width: 450px; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.02);">
+                    <span style="background: #fff3e0; color: #f57c00; font-size: 0.75rem; font-weight: bold; padding: 4px 10px; border-radius: 12px; font-family: 'Fredoka', sans-serif;">MDEC</span>
+                    <h3 style="color: #e65100; font-family: 'Fredoka', sans-serif; font-size: 1.2rem; margin: 12px 0 8px 0;">Digital Entrepreneurship Certification</h3>
+                    <p style="color: #666; font-size: 0.9rem; line-height: 1.5; margin-bottom: 15px;">
+                        Successfully completed structured digital talent development tracks under MDEC:[cite: 2, 3]
+                    </p>
+                    <ul style="color: #555; font-size: 0.85rem; padding-left: 18px; margin-bottom: 25px; line-height: 1.6;">
+                        <li><strong>eUM08:</strong> TikTok For Business by Coach Azriel (Completed: 3 Nov 2024)</li>
+                        <li><strong>eUM01:</strong> Business Model Strategy by Coach Salwa (Completed: 5 July 2024)</li>
+                    </ul>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="sijil mdec1.pdf" target="_blank" style="display: block; text-align: center; background: #ffa726; color: white; text-decoration: none; font-weight: bold; font-size: 0.85rem; padding: 10px; border-radius: 12px;">
+                            👁️ Open eUM08 TikTok Certificate (PDF)
+                        </a>
+                        <a href="sijil mdec 2.pdf" target="_blank" style="display: block; text-align: center; background: #ffa726; color: white; text-decoration: none; font-weight: bold; font-size: 0.85rem; padding: 10px; border-radius: 12px;">
+                            👁️ Open eUM01 Strategy Certificate (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BANK RAKYAT UNIPRENEUR (TEKAN KELUAR BANYAK GAMBAR) -->
+                <div style="background: #ffffff; border: 2px solid #feebc8; padding: 25px; border-radius: 20px; flex: 1; min-width: 280px; max-width: 450px; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.02);">
+                    <span style="background: #e1f5fe; color: #0288d1; font-size: 0.75rem; font-weight: bold; padding: 4px 10px; border-radius: 12px; font-family: 'Fredoka', sans-serif;">BANK RAKYAT</span>
+                    <h3 style="color: #01579b; font-family: 'Fredoka', sans-serif; font-size: 1.2rem; margin: 12px 0 8px 0;">UNIPreneur 4.0 Initiative</h3>
+                    <p style="color: #666; font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px;">
+                        Appointed student entrepreneur for the national <strong>UNIPreneur 4.0 (July 2024 - December 2024)</strong> project track[cite: 1]. Managed active task flows, project milestones, and business coordination routines at UniSZA[cite: 1].
+                    </p>
+
+                    <!-- KLIK SINI UNTUK POP-OUT LAMBAKAN GAMBAR -->
+                    <details style="background: #fbfbfb; border: 1px solid #b3e5fc; border-radius: 15px; overflow: hidden; transition: all 0.3s;">
+                        <summary style="padding: 14px; font-weight: bold; color: #0288d1; cursor: pointer; background: #e1f5fe; font-size: 0.85rem; outline: none; list-style: none; text-align: center;">
+                            📸 Click to Expand & View Gallery (Many Photos)
+                        </summary>
+                        
+                        <div style="padding: 15px; background: #ffffff; border-top: 1px solid #b3e5fc;">
+                            <p style="font-size: 0.8rem; color: #777; margin-top: 0; margin-bottom: 12px; font-style: italic;">
+                                Official performance report cover and deployment event logs:[cite: 1]
+                            </p>
+                            
+                            <!-- Grid Lambakan Gambar Kokurikulum Fatin -->
+                            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px;">
+                                <img src="Unipreneur.jpg" alt="Performance Report" style="width: 100%; height: 85px; object-fit: cover; border-radius: 8px; border: 1px solid #eee;">
+                                <img src="unipreneur1.jpeg" alt="Event Pic 1" style="width: 100%; height: 85px; object-fit: cover; border-radius: 8px; border: 1px solid #eee;">
+                                <img src="unipreneur2.jpeg" alt="Event Pic 2" style="width: 100%; height: 85px; object-fit: cover; border-radius: 8px; border: 1px solid #eee;">
+                                <img src="unipreneur3.jpeg" alt="Event Pic 3" style="width: 100%; height: 85px; object-fit: cover; border-radius: 8px; border: 1px solid #eee;">
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
-</body>
-</html>
-
-    <footer>
-        <p>&copy; 2026 Fatin Nurhana. All Rights Reserved.</p>
+    <footer style="text-align: center; padding: 20px; background: #ffffff; border-top: 1px solid #eee; margin-top: 40px;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.85rem; color: #888;">&copy; 2026 Fatin Nurhana. All Rights Reserved.</p>
     </footer>
 
 </body>
