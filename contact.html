@@ -216,29 +216,53 @@
 </head>
 <body>
 
-    <!-- SIDEBAR DENGAN REKABENTUK YANG TELAH DIPERBAIKI -->
-    <aside class="sidebar">
-        <!-- Menggunakan gambar asal Fatin dengan border sepadan -->
-        <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
-        <h1>Fatin Nurhana</h1>
-        <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
-        
-        <!-- SOSIAL IKON (Kini wajib muncul sebab CDN sudah dikemas kini) -->
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/fatin-nurhana-554064405/" target="_blank" class="icon-btn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/" target="_blank" class="icon-btn"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:fatin@example.com" class="icon-btn"><i class="fas fa-envelope"></i></a>
-            <a href="resume.pdf" target="_blank" class="icon-btn">CV</a>
-        </div>
+    <!-- 🌸 1. SIDEBAR PINK KONSISTEN -->
+    <aside class="sidebar" style="width: 280px; background: #fff; padding: 40px 24px; height: 100vh; position: fixed; border-right: 2px dashed #ffcbd1; box-sizing: border-box; text-align: center;">
+    
+    <!-- Gambar Profil Bucu Pink -->
+    <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #ffcbd1; box-shadow: 0 8px 20px rgba(255, 118, 118, 0.15); margin: 0 auto 10px auto; display: block;">
+    
+    <!-- Nama Kelabu Gelap & Font Fredoka -->
+    <h1 style="font-family: 'Fredoka', cursive; font-size: 1.9rem; color: #444444; margin: 20px 0 10px 0; font-weight: 600;">Fatin Nurhana</h1>
+    
+    <!-- Bio Media Informatics -->
+    <p class="sidebar-bio" style="font-size: 0.95rem; color: #7a7a7a; line-height: 1.6; margin-bottom: 30px; font-weight: 400; padding: 0 10px;">
+        Avid developer, IT (Media Informatics) student at UniSZA, and a creator drawn to creative tech narratives.
+    </p>
+    
+    <!-- 📱 IKON SOSIAL MEDIA (Latar Putih, Border Pink, Warna Logo Asal) -->
+    <div class="social-icons" style="display: flex; gap: 12px; justify-content: center; margin: 30px 0;">
+        <!-- LinkedIn (Biru) -->
+        <a href="https://www.linkedin.com/in/fatin-nurhana-554064405/" target="_blank" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #0a66c2; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; transition: all 0.2s;">
+            <i class="fab fa-linkedin-in" style="font-size: 1.1rem;"></i>
+        </a>
+        <!-- Instagram (Pink/Gradient) -->
+        <a href="https://instagram.com/" target="_blank" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #e1306c; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; transition: all 0.2s;">
+            <i class="fab fa-instagram" style="font-size: 1.1rem;"></i>
+        </a>
+        <!-- Email (Merah) -->
+        <a href="mailto:fatin@example.com" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #ea4335; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; transition: all 0.2s;">
+            <i class="fas fa-envelope" style="font-size: 1.1rem;"></i>
+        </a>
+        <!-- CV (Text Terapung Pink) -->
+        <a href="resume..pdf" download="Resume_Fatin.pdf" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #ff7676; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; font-size: 0.95rem; font-weight: 600; font-family: 'Fredoka', cursive; transition: all 0.2s;">CV</a>
+    </div>
 
-        <!-- NAVIGASI KAPSUL MENGIKUT IMAGE_3E7A08.PNG -->
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="blog.html">Articles</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
-    </aside>
+<!-- 🎛️ MENU KAPSUL UNTUK PAGE: CONTACT.HTML (CONTACT ACTIVE) -->
+<nav class="sidebar-nav" style="display: flex; flex-direction: column; gap: 14px; padding: 0 10px;">
+    
+    <!-- Butang Home kembali jadi pink lembut -->
+    <a href="index.html" style="display: block; padding: 14px 20px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f6; font-weight: 600; font-family: 'Fredoka', cursive; font-size: 1.05rem;">Home</a>
+    
+    <a href="about.html" style="display: block; padding: 14px 20px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f6; font-weight: 600; font-family: 'Fredoka', cursive; font-size: 1.05rem;">About Me</a>
+    
+    <a href="blog.html" style="display: block; padding: 14px 20px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f6; font-weight: 600; font-family: 'Fredoka', cursive; font-size: 1.05rem;">Articles</a>
+    
+    <!-- ⭐ Butang CONTACT sekarang MENYALA PINK PEKAT + SHADOW -->
+    <a href="contact.html" class="active" style="display: block; padding: 14px 20px; color: #ffffff; text-decoration: none; border-radius: 25px; background: #ff7676; font-weight: 600; font-family: 'Fredoka', cursive; font-size: 1.05rem; box-shadow: 0 5px 15px rgba(255, 118, 118, 0.4);">Contact</a>
+
+</nav>
+</aside>
 
     <!-- KANDUNGAN UTAMA (SEBELAH KANAN) KEKAL BERFUNGSI DENGAN FORMSPREE -->
     <main class="main-content">

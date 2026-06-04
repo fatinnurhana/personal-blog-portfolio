@@ -1,59 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Fatin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Fatin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #fffaf8; margin: 0; display: flex;">
 
-    <aside class="sidebar">
-        <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
-        
-        <h1>Fatin Nurhana</h1>
-        <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
-        
-        <div class="social-icons">
-            <a href="https://linkedin.com/" target="_blank" class="icon-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/" target="_blank" class="icon-btn instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:fatin@example.com" class="icon-btn email"><i class="fas fa-envelope"></i></a>
-            <a href="resume.pdf" download="Resume_Fatin.pdf" class="icon-btn cv-btn">CV</a>
-        </div>
+    <!-- 🌸 1. SIDEBAR PINK KONSISTEN -->
+    <aside class="sidebar" style="width: 280px; background: #fff; padding: 40px 24px; height: 100vh; position: fixed; border-right: 2px dashed #ffcbd1; box-sizing: border-box; text-align: center;">
+    
+    <!-- Gambar Profil Bucu Pink -->
+    <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #ffcbd1; box-shadow: 0 8px 20px rgba(255, 118, 118, 0.15); margin: 0 auto 10px auto; display: block;">
+    
+    <!-- Nama Kelabu Gelap & Font Fredoka -->
+    <h1 style="font-family: 'Fredoka', cursive; font-size: 1.9rem; color: #444444; margin: 20px 0 10px 0; font-weight: 600;">Fatin Nurhana</h1>
+    
+    <!-- Bio Media Informatics -->
+    <p class="sidebar-bio" style="font-size: 0.95rem; color: #7a7a7a; line-height: 1.6; margin-bottom: 30px; font-weight: 400; padding: 0 10px;">
+        Avid developer, IT (Media Informatics) student at UniSZA, and a creator drawn to creative tech narratives.
+    </p>
+    
+    <!-- 📱 IKON SOSIAL MEDIA (Latar Putih, Border Pink, Warna Logo Asal) -->
+    <div class="social-icons" style="display: flex; gap: 12px; justify-content: center; margin: 30px 0;">
+        <!-- LinkedIn (Biru) -->
+        <a href="https://www.linkedin.com/in/fatin-nurhana-554064405/" target="_blank" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #0a66c2; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; transition: all 0.2s;">
+            <i class="fab fa-linkedin-in" style="font-size: 1.1rem;"></i>
+        </a>
+        <!-- Instagram (Pink/Gradient) -->
+        <a href="https://instagram.com/" target="_blank" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #e1306c; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; transition: all 0.2s;">
+            <i class="fab fa-instagram" style="font-size: 1.1rem;"></i>
+        </a>
+        <!-- Email (Merah) -->
+        <a href="mailto:fatin@example.com" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #ea4335; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; transition: all 0.2s;">
+            <i class="fas fa-envelope" style="font-size: 1.1rem;"></i>
+        </a>
+        <!-- CV (Text Terapung Pink) -->
+        <a href="resume..pdf" download="Resume_Fatin.pdf" style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; color: #ff7676; text-decoration: none; border: 2px solid #ffe3e6; box-sizing: border-box; font-size: 0.95rem; font-weight: 600; font-family: 'Fredoka', cursive; transition: all 0.2s;">CV</a>
+    </div>
 
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="blog.html" class="active">Articles</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </aside>
+        <!-- MENU NAVIGASI KAPSUL -->
+        <nav class="sidebar-nav">
+            <a href="index.html" style="display: block; padding: 14px 24px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f5; font-weight: bold; font-family: 'Fredoka', cursive; margin-bottom: 12px;">Home</a>
+            <a href="about.html" style="display: block; padding: 14px 24px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f5; font-weight: bold; font-family: 'Fredoka', cursive; margin-bottom: 12px;">About Me</a>
+            <a href="blog.html" class="active" style="display: block; padding: 14px 24px; color: white; text-decoration: none; border-radius: 25px; background: #ff7676; font-weight: bold; font-family: 'Fredoka', cursive; margin-bottom: 12px; box-shadow: 0 4px 12px rgba(255, 118, 118, 0.3);">Articles</a>
+            <a href="contact.html" style="display: block; padding: 14px 24px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f5; font-weight: bold; font-family: 'Fredoka', cursive;">Contact</a>
+        </nav>
+    </aside>
 
-    <main>
-        <a href="article1.html" style="display: block;">
-            <article>
-                <h2>Essay 1: The Art of Adaptability in Modern Software Engineering</h2>
-                <p><small>Published: June 2026</small></p>
-                <p>Learning programming languages is akin to learning human literature...</p>
-            </article>
-        </a>
+    <!-- 💻 2. SENARAI ARTIKEL (DIUBAH SUPAYA LEBIH MAHAL & COMEL) -->
+    <main style="margin-left: 280px; flex: 1; padding: 50px 40px; max-width: 900px; box-sizing: border-box;">
+        
+        <h2 style="font-family: 'Fredoka', cursive; color: #4a4a4a; font-size: 2rem; margin-bottom: 30px; text-align: left; padding-left: 10px;">My Essays & Stories</h2>
 
-        <a href="article2.html" style="display: block;">
-            <article>
-                <h2>Essay 2: Version Control as a Digital Narrative and Living Resume</h2>
-                <p><small>Published: June 2026</small></p>
-                <p>GitHub is far grander than a simple storage for scripts...</p>
-            </article>
-        </a>
-    </main>
+        <!-- KAD ARTIKEL 1 -->
+        <a href="article1.html" style="display: block; text-decoration: none; margin-bottom: 25px;">
+            <article style="background: #ffffff; padding: 20px; border-radius: 24px; border: 2px solid #fff0f2; text-align: left; box-shadow: 0 8px 20px rgba(255, 118, 118, 0.03); display: flex; gap: 20px; align-items: center; transition: transform 0.2s, border-color 0.2s;">
+                <!-- Thumbnail Kiri -->
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=300&auto=format&fit=crop" alt="Code" style="width: 140px; height: 140px; border-radius: 16px; object-fit: cover; flex-shrink: 0;">
+                <!-- Kandungan Kanan -->
+                <div>
+                    <h3 style="color: #ff7676; font-family: 'Fredoka', cursive; font-size: 1.4rem; margin: 0 0 6px 0; line-height: 1.3;">Essay 1: The Art of Adaptability in Modern Software Engineering</h3>
+                    <p style="color: #dd6b20; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin: 0 0 10px 0; letter-spacing: 0.5px;">Published: June 2026</p>
+                    <p style="color: #666; line-height: 1.5; margin: 0; font-size: 0.95rem;">Learning programming languages is akin to learning human literature...</p>
+                </div>
+            </article>
+        </a>
 
-</body>
-</html>
+        <!-- KAD ARTIKEL 2 -->
+        <a href="article2.html" style="display: block; text-decoration: none; margin-bottom: 25px;">
+            <article style="background: #ffffff; padding: 20px; border-radius: 24px; border: 2px solid #fff0f2; text-align: left; box-shadow: 0 8px 20px rgba(255, 118, 118, 0.03); display: flex; gap: 20px; align-items: center; transition: transform 0.2s, border-color 0.2s;">
+                <!-- Thumbnail Kiri -->
+                <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=300&auto=format&fit=crop" alt="Laptop" style="width: 140px; height: 140px; border-radius: 16px; object-fit: cover; flex-shrink: 0;">
+                <!-- Kandungan Kanan -->
+                <div>
+                    <h3 style="color: #ff7676; font-family: 'Fredoka', cursive; font-size: 1.4rem; margin: 0 0 6px 0; line-height: 1.3;">Essay 2: Version Control as a Digital Narrative and Living Resume</h3>
+                    <p style="color: #dd6b20; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin: 0 0 10px 0; letter-spacing: 0.5px;">Published: June 2026</p>
+                    <p style="color: #666; line-height: 1.5; margin: 0; font-size: 0.95rem;">GitHub is far grander than a simple storage for scripts...</p>
+                </div>
+            </article>
+        </a>
 
-    <footer>
-        <p>&copy; 2026 Fatin Nurhana. All Rights Reserved.</p>
-    </footer>
+        <!-- KAD ARTIKEL 3 -->
+        <a href="article3.html" style="display: block; text-decoration: none; margin-bottom: 25px;">
+            <article style="background: #ffffff; padding: 20px; border-radius: 24px; border: 2px solid #fff0f2; text-align: left; box-shadow: 0 8px 20px rgba(255, 118, 118, 0.03); display: flex; gap: 20px; align-items: center; transition: transform 0.2s, border-color 0.2s;">
+                <!-- Thumbnail Kiri -->
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=300&auto=format&fit=crop" alt="Creative Tech" style="width: 140px; height: 140px; border-radius: 16px; object-fit: cover; flex-shrink: 0;">
+                <!-- Kandungan Kanan -->
+                <div>
+                    <h3 style="color: #ff7676; font-family: 'Fredoka', cursive; font-size: 1.4rem; margin: 0 0 6px 0; line-height: 1.3;">Essay 3: The Magic of Creative Coding—Blending Art and Logic</h3>
+                    <p style="color: #dd6b20; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin: 0 0 10px 0; letter-spacing: 0.5px;">Published: June 2026</p>
+                    <p style="color: #666; line-height: 1.5; margin: 0; font-size: 0.95rem;">To many, computer science is a world made strictly of cold math...</p>
+                </div>
+            </article>
+        </a>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="position: fixed; bottom: 15px; right: 25px; color: #888888; font-size: 0.75rem; font-weight: 300;">
+        &copy; 2026 Fatin Nurhana. Built for CSD 34203.
+    </footer>
 
 </body>
 </html>

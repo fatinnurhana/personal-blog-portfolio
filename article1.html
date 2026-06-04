@@ -3,57 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spoopy Games - Fatin's Portfolio</title>
+    <title>Spoopy Games - Fatin Nurhana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #fffaf8; margin: 0; display: flex;">
 
-    <header>
-        <h1>Editorial Writing</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="blog.html" class="active">Articles</a>
-            <a href="contact.html">Contact</a>
+    <!-- 🌸 1. SIDEBAR PINK COMEL (KEKAL KONSISTEN) -->
+    <aside class="sidebar" style="width: 280px; background: #fff; padding: 40px 24px; height: 100vh; position: fixed; border-right: 2px dashed #ffcbd1; box-sizing: border-box; text-align: left;">
+        <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid #ffcbd1; margin-bottom: 10px;">
+        
+        <h1 style="font-family: 'Fredoka', cursive; font-size: 1.8rem; color: #4a4a4a; margin: 15px 0 8px 0;">Fatin Nurhana</h1>
+        <p class="sidebar-bio" style="font-size: 0.95rem; color: #7a7a7a; line-height: 1.5; margin-bottom: 25px;">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
+        
+        <!-- SOSIAL IKON BULAT SEMPURNA -->
+        <div class="social-icons" style="display: flex; gap: 12px; margin: 25px 0;">
+            <a href="https://linkedin.com/" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #fff5f5; display: flex; align-items: center; justify-content: center; color: #ff7676; text-decoration: none; border: 1px solid #ffcbd1; box-sizing: border-box;">
+                <i class="fab fa-linkedin-in" style="font-size: 1rem; display: flex; align-items: center; justify-content: center;"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #fff5f5; display: flex; align-items: center; justify-content: center; color: #ff7676; text-decoration: none; border: 1px solid #ffcbd1; box-sizing: border-box;">
+                <i class="fab fa-instagram" style="font-size: 1rem; display: flex; align-items: center; justify-content: center;"></i>
+            </a>
+            <a href="mailto:fatin@example.com" style="width: 40px; height: 40px; border-radius: 50%; background: #fff5f5; display: flex; align-items: center; justify-content: center; color: #ff7676; text-decoration: none; border: 1px solid #ffcbd1; box-sizing: border-box;">
+                <i class="fas fa-envelope" style="font-size: 1rem; display: flex; align-items: center; justify-content: center;"></i>
+            </a>
+            <a href="resume.pdf" download="Resume_Fatin.pdf" style="width: 40px; height: 40px; border-radius: 50%; background: #fff5f5; display: flex; align-items: center; justify-content: center; color: #ff7676; text-decoration: none; border: 1px solid #ffcbd1; box-sizing: border-box; font-size: 0.9rem; font-weight: bold; font-family: 'Fredoka', cursive;">CV</a>
+        </div>
+
+        <!-- NAVIGASI KAPSUL -->
+        <nav class="sidebar-nav">
+            <a href="index.html" style="display: block; padding: 14px 24px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f5; font-weight: bold; font-family: 'Fredoka', cursive; margin-bottom: 12px;">Home</a>
+            <a href="about.html" style="display: block; padding: 14px 24px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f5; font-weight: bold; font-family: 'Fredoka', cursive; margin-bottom: 12px;">About Me</a>
+            <a href="blog.html" class="active" style="display: block; padding: 14px 24px; color: white; text-decoration: none; border-radius: 25px; background: #ff7676; font-weight: bold; font-family: 'Fredoka', cursive; margin-bottom: 12px; box-shadow: 0 4px 12px rgba(255, 118, 118, 0.3);">Articles</a>
+            <a href="contact.html" style="display: block; padding: 14px 24px; color: #ff7676; text-decoration: none; border-radius: 25px; background: #fff5f5; font-weight: bold; font-family: 'Fredoka', cursive;">Contact</a>
         </nav>
-    </header>
+    </aside>
 
-    <main style="max-width: 750px; margin: 50px auto 0 auto;">
+    <!-- 💻 2. KANDUNGAN ARTIKEL UTAMA (SEBELAH KANAN) -->
+    <main style="margin-left: 280px; flex: 1; padding: 50px 40px; max-width: 900px; box-sizing: border-box; position: relative;">
         
-        <p><small style="color: #adb5bd; letter-spacing: 1px;">GENRE: GAME COVERAGES &bull; PUBLISHED: JUNE 2026</small></p>
-        
-        <h1 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #1a1a1a; margin-bottom: 20px; line-height: 1.3;">
+        <!-- INFO CRDITS TOP RIGHT (Dari image_3e6b45.jpg) -->
+        <div style="position: absolute; top: 20px; right: 40px; text-align: right; color: #888888; font-size: 0.8rem; font-weight: 300;">
+            &copy; 2026 Fatin Nurhana. Built with passion for CSD 34203.
+        </div>
+
+        <!-- METADATA (GENRE & PUBLISHED DATE) -->
+        <p style="color: #a0aec0; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-top: 20px; margin-bottom: 15px;">
+            GENRE: GAME COVERAGES &bull; PUBLISHED: JUNE 2026
+        </p>
+
+        <!-- TAJUK ARTIKEL (FON EDITORIAL BESAR & KEMAS) -->
+        <h1 style="font-family: 'Georgia', serif; font-size: 2.6rem; font-weight: 700; color: #1a1a1a; line-height: 1.25; margin: 0 0 30px 0; letter-spacing: -0.5px;">
             Spoopy Games That'll Make Every Night An Exciting Night
         </h1>
 
-        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop" alt="Gaming" style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 30px;">
+        <!-- GAMBAR UTAMA GAME -->
+        <div style="margin-bottom: 35px; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+            <!-- Sila gantikan src dengan nama fail imej gaming Fatin -->
+            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=1200&auto=format&fit=crop" alt="Gaming Setup" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 500px;">
+        </div>
 
-        <div style="font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #333333; line-height: 2; font-weight: 300;">
-            <p style="margin-bottom: 25px;">
-                Get ready to wear your ghoulishly fashionable pants in the spirit of Halloween. Horror games, or affectionately dubbed as "spoopy" games, have carved a massive niche in the modern interactive entertainment ecosystem. But what exactly makes them so addictive?
+        <!-- ISI KANDUNGAN TEKS ARTIKEL -->
+        <div style="font-size: 1.05rem; line-height: 1.75; color: #4a5568; text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+            <p style="margin-top: 0; margin-bottom: 20px;">
+                Diving into the world of horror and "spoopy" games brings a unique kind of adrenaline. It's not just about the jump scares; it's about the atmosphere, the sound design, and the lingering tension that keeps you at the edge of your seat all night long.
             </p>
-            
-            <p style="margin-bottom: 25px;">
-                Unlike traditional jump-scare platforms, modern atmospheric horror relies heavily on audio design and psychological pacing. When player agency is limited—such as having a flashlight with a dying battery—the level of engagement spikes dramatically. 
-            </p>
-
-            <blockquote style="border-left: 4px solid #1a1a1a; padding-left: 20px; font-style: italic; color: #6c757d; margin: 30px 0;">
-                "The oldest and strongest emotion of mankind is fear, and the oldest and strongest fear is fear of the unknown." — H.P. Lovecraft
-            </blockquote>
-
-            <p style="margin-bottom: 25px;">
-                As software development concepts grow more complex, building these immersive simulation systems challenges engineers to craft smart AI pathfinding models. It's a perfect blend of high-level coding techniques and dark, artistic screenplays.
+            <p style="margin-bottom: 40px;">
+                Whether you are exploring dimly lit corridors or decoding eerie pixelated mysteries, creative indie developers are constantly shifting the boundaries of interactive horror narratives...
             </p>
         </div>
 
-        <div style="margin-top: 50px; border-top: 1px solid #e9ecef; padding-top: 20px; text-align: center;">
-            <a href="blog.html" style="color: #1a1a1a; font-weight: 600; text-decoration: none;">&larr; Back to Articles</a>
+        <!-- BUTANG KEMBALI -->
+        <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #edf2f7;">
+            <a href="blog.html" style="color: #ff7676; text-decoration: none; font-family: 'Fredoka', cursive; font-weight: bold; font-size: 1rem;">
+                ← Back to Articles
+            </a>
         </div>
+
     </main>
-
-    <footer>
-        <p>&copy; 2026 Fatin Nurhana. Built with passion for CSD 34203.</p>
-    </footer>
 
 </body>
 </html>
