@@ -1,111 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Fatin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Fatin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- SIDEBAR KEKAL SAMA MACAM ASAL -->
-    <aside class="sidebar">
-        <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
-        
-        <h1>Fatin Nurhana</h1>
-        <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
-        
-        <div class="social-icons">
-            <a href="https://linkedin.com/" target="_blank" class="icon-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/" target="_blank" class="icon-btn instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:fatin@example.com" class="icon-btn email"><i class="fas fa-envelope"></i></a>
-            <a href="resume.pdf" download="Resume_Fatin.pdf" class="icon-btn cv-btn">CV</a>
-        </div>
+    <aside class="sidebar">
+        <img src="about-me.jpeg" alt="Fatin Nurhana" class="profile-img">
+        
+        <h1>Fatin Nurhana</h1>
+        <p class="sidebar-bio">Avid developer, CS student at UniSZA, and a writer drawn to creative tech narratives.</p>
+        
+        <div class="social-icons">
+            <a href="https://linkedin.com/" target="_blank" class="icon-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/" target="_blank" class="icon-btn instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:fatin@example.com" class="icon-btn email"><i class="fas fa-envelope"></i></a>
+            <a href="resume.pdf" download="Resume_Fatin.pdf" class="icon-btn cv-btn">CV</a>
+        </div>
 
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="blog.html" class="active">Articles</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </aside>
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="blog.html" class="active">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </aside>
 
-    <!-- MAIN SECTION: DIUBAH SUAI MENGIKUT LAYOUT IMAGE_3EDC01.JPG -->
-    <main style="max-width: 900px; margin: 0 auto; padding: 40px 30px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; min-height: 100vh;">
+    <main>
+        <a href="article1.html" style="display: block;">
+            <article>
+                <h2>Essay 1: The Art of Adaptability in Modern Software Engineering</h2>
+                <p><small>Published: June 2026</small></p>
+                <p>Learning programming languages is akin to learning human literature...</p>
+            </article>
+        </a>
 
-        <!-- ================= 1. TAJUK ARTIKEL & TAG KATEGORI ================= -->
-        <div style="text-align: center; margin-bottom: 35px;">
-            <h1 style="font-size: 2.3rem; font-weight: 400; color: #1a1a1a; margin-bottom: 15px; line-height: 1.25; letter-spacing: -0.5px;">
-                The Art of Adaptability in Modern Software Engineering
-            </h1>
-            
-            <!-- Tag Kategori (Pill Badges dari image_3edc01.jpg) -->
-            <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px;">
-                <span style="border: 1px solid #dcdcdc; color: #666666; font-size: 0.75rem; padding: 4px 14px; border-radius: 20px; font-weight: 500;">Software Engineering</span>
-                <span style="border: 1px solid #dcdcdc; color: #666666; font-size: 0.75rem; padding: 4px 14px; border-radius: 20px; font-weight: 500;">Tech Essay</span>
-            </div>
-        </div>
+        <a href="article2.html" style="display: block;">
+            <article>
+                <h2>Essay 2: Version Control as a Digital Narrative and Living Resume</h2>
+                <p><small>Published: June 2026</small></p>
+                <p>GitHub is far grander than a simple storage for scripts...</p>
+            </article>
+        </a>
+    </main>
 
-        <!-- ================= 2. GAMBAR UTAMA (FEATURED IMAGE) ================= -->
-        <div style="margin-bottom: 40px; text-align: center;">
-            <!-- Fatin boleh guna gambar sedia ada atau tukar fail imej lain nanti -->
-            <img src="about-me.jpeg" alt="Featured Article Image" style="width: 100%; height: auto; max-height: 450px; object-fit: cover; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-        </div>
+</body>
+</html>
 
-        <!-- ================= 3. STRUKTUR 2 KOLUM (KANDUNGAN UTAMA) ================= -->
-        <div style="display: flex; gap: 40px; flex-wrap: wrap; text-align: left;">
-            
-            <!-- KOLUM KIRI: MAKLUMAT CONTRIBUTOR & READING TIME -->
-            <div style="flex: 1; min-width: 150px; max-width: 180px; border-top: 1px solid #eaeaea; padding-top: 20px;">
-                <p style="margin: 0; font-size: 0.7rem; color: #999999; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600;">Contributor</p>
-                
-                <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px; margin-bottom: 25px;">
-                    <img src="about-me.jpeg" alt="Fatin Nurhana" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;">
-                    <div>
-                        <h4 style="margin: 0; font-size: 0.85rem; font-weight: 600; color: #333;">Fatin Nurhana</h4>
-                        <p style="margin: 2px 0 0 0; font-size: 0.75rem; color: #999999;">June 2026</p>
-                    </div>
-                </div>
-
-                <p style="margin: 0; font-size: 0.7rem; color: #999999; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600;">Reading Time</p>
-                <p style="margin: 6px 0 0 0; font-size: 0.85rem; color: #555; display: flex; align-items: center; gap: 6px;">
-                    <i class="far fa-clock" style="font-size: 0.8rem; color: #777;"></i> 2 Minute
-                </p>
-            </div>
-
-            <!-- KOLUM KANAN: ISI KANDUNGAN ARTIKEL -->
-            <div style="flex: 3; min-width: 280px;">
-                <!-- Perenggan Pengenalan (Gaya tulisan kelabu pudar lembut) -->
-                <p style="font-size: 1.05rem; line-height: 1.65; color: #555555; margin-top: 0; margin-bottom: 25px; font-weight: 300;">
-                    Learning programming languages is akin to learning human literature. It requires an understanding of syntax, context, and the subtle art of translation between logic and machine execution.
-                </p>
-
-                <!-- Garis Pembahagi Halus (Macam dalam imej contoh) -->
-                <hr style="border: 0; border-top: 1px solid #eaeaea; margin-bottom: 25px;">
-
-                <!-- Perenggan Sorotan Hijau (Mencerminkan identiti penulisan Fatin) -->
-                <p style="font-size: 1.05rem; line-height: 1.65; color: #2e7d32; font-weight: 500; margin-bottom: 35px;">
-                    In a rapidly evolving digital landscape, tech adaptability isn't just a skill—it is a core mindset. Embracing version control, collaborative code bases, and creative storytelling transforms standard code into a living, breathing software solution.
-                </p>
-                
-                <!-- PANDUAN LINK KE ESSAY LAIN (Supaya Essay 2 tidak hilang) -->
-                <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; border-radius: 10px; margin-top: 40px;">
-                    <p style="margin: 0 0 8px 0; font-size: 0.8rem; text-transform: uppercase; color: #999; font-weight: bold; letter-spacing: 0.5px;">Read Next Article:</p>
-                    <a href="article2.html" style="color: #ff7676; font-weight: 600; text-decoration: none; font-size: 0.95rem;">
-                        Essay 2: Version Control as a Digital Narrative and Living Resume ➔
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </main>
-
-    <!-- FOOTER DI BAWAH SEKALI SELEPAS MAIN -->
-    <footer style="clear: both; padding: 20px 0; text-align: center;">
-        <p style="font-size: 0.85rem; color: #777;">&copy; 2026 Fatin Nurhana. All Rights Reserved.</p>
-    </footer>
+    <footer>
+        <p>&copy; 2026 Fatin Nurhana. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
